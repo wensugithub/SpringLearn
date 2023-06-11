@@ -101,7 +101,7 @@
    针对不同类型的成员变量, 在<property>标签中需要嵌套其他标签
    ~~~
 
-   ![image-20230611214546602](C:\Users\hp\AppData\Roaming\Typora\typora-user-images\image-20230611214546602.png)
+   ![image-20230611214546602](https://github.com/wensugithub/markdownPicture/blob/main/image-20230611214546602.png?raw=true)
 
    - JDK内置类型
 
