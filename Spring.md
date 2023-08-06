@@ -302,11 +302,57 @@
            底层实现: 工厂模式
      ~~~
 
+   - 依赖注入(Dependency Injection DI)
+
+     ~~~markdown
+     反转控制就是一个概念, 面试会问到, 而依赖注入是一种spring的编程方式
      
-
+     注入: 通过spring工厂及配置文件, 为对象(bean,组件)的成员变量赋值
      
+     当一个类(UserService)需要另一个类(UserDao)时, 就意味着依赖, 一旦产生依赖, 就可以把另一个类(UserDao)作为本类(UserService)的成员变量, 最终通过Spring配置文件进行注入(赋值)
+     ~~~
 
-   - sfsd
+10. Spring工厂创建复杂对象
 
-10. sdf
+    ![image-20230617205926204](https://github.com/wensugithub/markdownPicture/blob/main/image-20230617205926204.png?raw=true)
+
+    - 什么是复杂对象
+
+      ~~~markdown
+      所谓复杂对象就是不能直接通过new构造方法创建的对象
+      Connection
+      SqlSessionFactory
+      ~~~
+
+    - Spring工厂创建复杂对象的3种方式
+
+      1. FactoryBean接口
+         a. 实现FactoryBean接口
+         
+         ![image-20230617212442569](https://github.com/wensugithub/markdownPicture/blob/main/image-20230617212442569.png?raw=true)
+         
+         b. Spring配置文件配置
+         
+          ~~~xml
+         # 如果class中指定的类型是 FactoryBean接口的实现类, 那么通过id值获得的是这个类创建的复杂对象。下面的例子中返回的就是Connection对象
+         <bean id="conn" class="com.ws.factorybean.ConnectionFactoryBean"/>
+          ~~~
+         
+         
+         
+      2. 实例工厂
+
+      3. 静态工厂
+
+      
+
+      
+
+    - fdfg
+
+11. 234
+
+12. 234
+
+13. 
 
